@@ -40,5 +40,6 @@
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
-  }
+  },
+  "homepage": "https://nikhil1248.github.io/PhotostudioPortfolio"
 }
