@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="mb-4 text-xl">Contact Us</p>
 
         {/* Contact Information */}
-        <div className="flex justify-between items-center space-x-4 md:space-x-8 text-lg mb-4">
+        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center space-y-4 md:space-y-0 md:space-x-8 text-lg mb-4">
           <a
             href="mailto:sainikt.12@gmail.com"
             className="hover:text-gray-400 transition duration-300 transform hover:scale-105"

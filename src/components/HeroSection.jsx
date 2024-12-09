@@ -5,9 +5,9 @@ import sampleVideo from "../assets/sample-video.mp4"; // Sample Video
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen">
-      {/* Video Background */}
+      {/* Video Background (Hidden on Mobile) */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover hidden sm:block"
         autoPlay
         loop
         muted
@@ -15,6 +15,11 @@ const HeroSection = () => {
         <source src={sampleVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      {/* Optional Background Image for Mobile */}
+      <div className="sm:hidden absolute top-0 left-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('path_to_your_image.jpg')" }}>
+        {/* You can use an image URL here */}
+      </div>
 
       {/* Overlay with Logo and Text */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">

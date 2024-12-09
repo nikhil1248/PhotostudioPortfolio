@@ -13,7 +13,7 @@ const Portfolio = () => {
           <img
             src={image}
             alt={`Portfolio ${idx + 1}`}
-            className="w-full h-64 object-cover rounded-lg shadow-lg"
+            className="w-full h-64 object-cover rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-105"
           />
         </div>
       ))}
